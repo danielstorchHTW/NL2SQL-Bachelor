@@ -1,0 +1,24 @@
+# Environment files
+*.env
+
+# Ignore Data directories in all Test folders
+**/Test*/Data/
+
+# Additional specific files or directories in Test folders
+**/Test*/Models/
+**/Test*/Code/logs/
+**/Test*/Code/results.csv
+**/Test*/Code/Models
+
+# Python virtual environment and cache files
+**/venv/
+**/__pycache__/
+__pycache__/
+
+# IDE and system files
+**/.idea/
+**/.DS_Store
+
+# Ignore all contents of the spider folder, but keep the folder itself
+spider/*
+!spider/.gitkeep
