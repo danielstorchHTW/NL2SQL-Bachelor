@@ -1,15 +1,6 @@
 # Environment files
 *.env
 
-# Ignore Data directories in all Test folders
-**/Test*/Data/
-
-# Additional specific files or directories in Test folders
-**/Test*/Models/
-**/Test*/Code/logs/
-**/Test*/Code/results.csv
-**/Test*/Code/Models
-
 # Python virtual environment and cache files
 **/venv/
 **/__pycache__/
