@@ -68,13 +68,13 @@ def generate_sql(question, schema_metadata, model):
                     """,
         "stream": False
     }
-    print("\nFrage:\n" + question)
+    print("\nQuestion:\n" + question)
     print("\nSchema:\n" + schema_metadata)
     try:
         response = requests.post(url, auth=auth, headers=headers, json=payload, verify=False)
         response.raise_for_status()
         result = response.json()
-        print("\nAntwort:\n" + clean_output(result.get("response", "")))
+        print("\nResponse:\n" + clean_output(result.get("response", "")))
         print(f"\n{'-'*100}\n")
 
         return clean_output(result.get("response", ""))
